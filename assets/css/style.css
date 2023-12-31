@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 45%;
+    margin: 20px auto;   
+    background-color: #eee;
+    
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .container {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* Start Settings */
+.settings {
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.settings h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.settings > label {
+    padding: 15px 0;
+    display: inline-block;
+    width: 200px;
+}
+
+.settings .difficult-level,
+.settings .number-of-questions {
+    padding: 15px 0;
+}
+
+.settings .difficult-level label:first-child,
+.settings .number-of-questions label:first-child {
+    width: 200px;
+    display: inline-block;
+}
+
+.settings #category {
+    width: 300px;
+    height: 45px;
+    border: 2px solid #009688;
+    font-size: 18px;
+    color: #009688;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    text-transform: capitalize;   
+}
+
+.settings input[type=number] {
+    padding: 10px;
+    width: 300px;
+    display: inline-block;
+    margin: 15px 0;
+    outline: none;
+    font-size: 18px;
+    color: #009688;
+    border: 2px solid #009688;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.settings #startBtn,
+.quiz #next,
+.final #again {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 20px auto;
+    display: block;
+    background-color: #009688;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid #009688;
+    cursor: pointer;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.settings #startBtn:hover,
+.quiz #next:hover,
+.final #again:hover {
+    color: #009688;
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+    .settings #category {
+        margin: auto;
+        display: block;      
+    }
+
+    .settings .difficult-level label:first-child {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .settings .difficult-level label:not(:first-child) {
+        display: block;
+        margin-left: 50px;
+        padding: 10px 0;        
+    }
+
+    .settings input[type=number] {
+        margin: 15px auto;
+        display: block;
+    }
+}
+
+/* End Settings */
+
+/* Start Quiz */
+.quiz {
+    padding: 15px;
+}
+
+.quiz .count {
+    display: flex;
+    width: 100px;
+    color: #009688;
+    border: 2px solid #009688;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.quiz #questions {
+    padding: 15px;
+    font-size: 25px;
+}
+
+.quiz label {
+    display: block;
+    padding-left: 20px;
+    width: 100%;
+    color: #009688;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .quiz #questions {
+        font-size: 20px;
+    }
+
+    .quiz label {
+        font-size: 17px;
+    }
+}
+/* End Quiz */
+
+/* Start Final */
+.final {
+    padding: 15px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.final h2 {
+    padding: 10px 0;    
+}
+
+.final .score {
+    color: #009688;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+@media (max-width: 767px) {
+    .final h2 {
+        font-size: 18px;
+    }
+
+    .final .score {
+        font-size: 16px;
+    }
+}
+/* End Final */

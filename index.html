@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Using OOP</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <div class="quiz-app">
+        <div class="container">
+            <div class="app-content">
+                <div class="final" style="display: none;">
+                    <h2>you answered all questions</h2>
+                    <p class="score"></p>
+                    <h4>try again</h4>
+                    <button id="again">again</button>
+                </div>
+        
+                <div class="quiz" style="display: none;">
+                    <div class="count">
+                        <p class="current"></p>
+                        <p>/</p>
+                        <p class="total"></p>
+                    </div>
+                    <h3 id="questions"></h3>
+                    
+                    <label for="0" class="container" id="a1"></label>
+                    <label for="1" class="container" id="a2"></label>
+                    <label for="2" class="container" id="a3"></label>
+                    <label for="3" class="container" id="a4"></label>
+                    
+                    <button id="next">Next</button>
+                </div>     
+                
+                <div class="settings">
+                    <h2>quiz settings</h2>
+                    <label for="category">select category</label>
+                    <select name="" id="category">
+                        <option value="9">general knowledge</option>
+                        <option value="27">animals</option>
+                        <option value="23">history</option>
+                        <option value="21">sports</option>
+                    </select>
+                    
+                    <div class="difficult-level">
+                        <label for="difficulty">difficulty</label>
+                        <label for="easy">
+                            <input type="radio" id="easy" name="difficulty">
+                            easy
+                        </label>
+                        <label for="medium">
+                            <input type="radio" id="medium" name="difficulty">
+                            medium
+                        </label>
+                        <label for="hard">
+                            <input type="radio" id="hard" name="difficulty">
+                            hard
+                        </label>
+                    </div>
+                    <div class="number-of-questions">
+                        <label for="nQuestions">
+                            number of questions
+                        </label>
+                        <input id="nQuestions" type="number" value="1" minlength="1" maxlength="15">
+                    </div>
+                    
+                    <button id="startBtn" class="submit">start quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
